@@ -11,7 +11,7 @@ pip install -e .
 
 ## Prerequisites
 
-[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) must be installed and authenticated (e.g. via a Claude Max subscription):
+[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) must be installed and authenticated (e.g. via a Claude (Pro/max subscription):
 
 ```bash
 npm install -g @anthropic-ai/claude-code

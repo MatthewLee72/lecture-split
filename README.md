@@ -2,11 +2,28 @@
 
 Split lecture slide PDFs into semantically grouped sections with AI-generated context preambles.
 
+## Why
+
+Lecture slide decks are big. A single PDF can easily run 80+ slides and eat most of an AI chatbot's context window — leaving little room for the actual conversation. Worse, most of those slides aren't relevant to the question you're asking right now.
+
+`lecture-split` breaks a lecture PDF into topical sections and generates a context preamble for each one. Instead of dumping the entire deck into a chat, you feed in only the section you're studying plus a compact summary of everything that came before it. The AI gets the full picture of where the material fits in the lecture, without wasting context on slides you don't need yet.
+
+The result: longer, more useful conversations per section, and an AI that can actually reference surrounding context instead of drowning in 80 pages of slide text.
+
 ## Install
 
 ```bash
+git clone https://github.com/MatthewLee72/lecture-split.git
 cd lecture-split
-pip install -e .
+pip install .
+```
+
+This installs `lecture-split` as a CLI command available wherever your Python environment is active.
+
+To install it globally (available in every terminal session without activating a venv), use [pipx](https://pipx.pypa.io/):
+
+```bash
+pipx install git+https://github.com/MatthewLee72/lecture-split.git
 ```
 
 ## Prerequisites
